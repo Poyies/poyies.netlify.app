@@ -1,5 +1,5 @@
 :root {
-    --header-bg:#f3f3f1dd;
+  --header-bg: #f3f3f1dd;
   --bg-color: #f3f3f1;
   --text-color: #333;
   --about-bg: #dde2bf;
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --header-bg:#333333dd;
+    --header-bg: #333333dd;
     --bg-color: #333;
     --text-color: #f1f1f1;
     --about-bg: #93886c;
@@ -27,7 +27,7 @@
 }
 
 .dark-mode {
-    --header-bg:#333333dd;
+  --header-bg: #333333dd;
   --bg-color: #333;
   --text-color: #f1f1f1;
   --about-bg: #93886c;
@@ -54,12 +54,12 @@ body {
 
 header {
   background-color: var(--header-bg);
-  backdrop-filter:blur(3px);
-  width: 100%;  
-  position:sticky;
-  top:0;
+  backdrop-filter: blur(3px);
+  width: 100%;
+  position: sticky;
+  top: 0;
   z-index: 999;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 header .header-title {
@@ -179,7 +179,7 @@ section .content {
   border-radius: 3rem;
   border: 0.5rem solid white;
   cursor: pointer;
-  position:relative;
+  position: relative;
 }
 
 #about .profile-container:hover .profile {
@@ -187,27 +187,27 @@ section .content {
 }
 
 #about .profile-container .fact-overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--skill-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: brightness(0.5);    
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s;
-  }
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--skill-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.5);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
 
-  .fact-overlay span{
-    padding:1rem;
-  }
+.fact-overlay span {
+  padding: 1rem;
+}
 
 #about .profile {
   height: 300px;
@@ -221,9 +221,6 @@ section .content {
 }
 
 /* Hobbies */
-#hobbies {
-}
-
 #hobbies .hobbies-container {
   display: flex;
   gap: 1rem;
@@ -359,7 +356,8 @@ footer {
     padding: 0px;
   }
 
-  #about .profile-container, #about .profile {
+  #about .profile-container,
+  #about .profile {
     height: 100%;
     width: 100%;
   }
