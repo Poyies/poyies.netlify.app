@@ -62,7 +62,6 @@
 // });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
@@ -82,24 +81,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let hideTimeout;
 
-    // Function to apply the correct theme
+    // Function to apply saved theme
     function applyTheme() {
         const storedTheme = localStorage.getItem("theme");
 
         if (storedTheme === "dark") {
             body.classList.add("dark-mode");
             darkModeToggle.textContent = "Light ☀️";
-        } else if (storedTheme === "light") {
+        } else {
             body.classList.remove("dark-mode");
             darkModeToggle.textContent = "Dark 🌙";
-        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            // If no stored preference, follow system settings
-            body.classList.add("dark-mode");
-            darkModeToggle.textContent = "Light ☀️";
         }
     }
 
-    // Function to toggle dark mode manually
+    // Function to toggle Dark Mode manually
     function toggleDarkMode() {
         body.classList.toggle("dark-mode");
 
@@ -128,24 +123,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
 
-    // Apply theme on page load
+    // Apply saved theme on page load
     applyTheme();
 
     // Listen for Dark Mode toggle button click
     darkModeToggle.addEventListener("click", toggleDarkMode);
-
-    // Listen for system Dark Mode changes (for mobile users)
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
-        if (!localStorage.getItem("theme")) {
-            if (e.matches) {
-                body.classList.add("dark-mode");
-                darkModeToggle.textContent = "Light ☀️";
-            } else {
-                body.classList.remove("dark-mode");
-                darkModeToggle.textContent = "Dark 🌙";
-            }
-        }
-    });
 
     // Listen for clicks on the profile picture to show a fun fact
     profileContainer.addEventListener("click", showFunFact);
