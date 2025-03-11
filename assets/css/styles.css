@@ -128,7 +128,7 @@ nav ul li a {
   background: var(--card-bg);
   border: none;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 1rem;
   cursor: pointer;
   color: var(--text-color);
@@ -347,18 +347,34 @@ footer {
     content: "P";
   }
 
+  header .header-title{
+    font-size: 1.25rem;
+  }
+
   nav ul {
-    gap: 20px;
+    gap: 10px;
   }
 
   section {
     padding: 0px;
   }
 
+  .nav-container{
+    gap: 0.5rem;
+  }
+
+  .container{
+    width:92%;
+  }
+  
+  #about .about-container{
+    gap: 10px;
+  }
+
   #about .profile-container,
   #about .profile {
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 20px);
+        width: calc(100% - 20px);
   }
 
   #hobbies img.card-banner {
