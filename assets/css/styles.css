@@ -52,13 +52,18 @@ body {
 header {
   background-color: var(--bg-color);
   width: 100%;
-  border-bottom: 3px solid var(--highlight-color);
+  /* border-bottom: 3px solid var(--highlight-color); */
+  position:sticky;
+  top:0;
+  z-index: 999;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
 }
 
 header .header-title {
   color: var(--text-color);
   font-family: "", Courier;
   position: relative;
+  margin: 0.8rem 0rem;
 }
 
 .header-title::after {
@@ -104,7 +109,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
 nav ul li {
