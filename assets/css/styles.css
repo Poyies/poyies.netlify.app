@@ -1,4 +1,5 @@
 :root {
+    --header-bg:#f3f3f1dd;
   --bg-color: #f3f3f1;
   --text-color: #333;
   --about-bg: #dde2bf;
@@ -13,6 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --header-bg:#333333dd;
     --bg-color: #333;
     --text-color: #f1f1f1;
     --about-bg: #93886c;
@@ -25,6 +27,7 @@
 }
 
 .dark-mode {
+    --header-bg:#333333dd;
   --bg-color: #333;
   --text-color: #f1f1f1;
   --about-bg: #93886c;
@@ -50,9 +53,9 @@ body {
 }
 
 header {
-  background-color: var(--bg-color);
-  width: 100%;
-  /* border-bottom: 3px solid var(--highlight-color); */
+  background-color: var(--header-bg);
+  backdrop-filter:blur(3px);
+  width: 100%;  
   position:sticky;
   top:0;
   z-index: 999;
@@ -313,7 +316,6 @@ footer {
 }
 
 @media (max-width: 991.98px) {
-  html,
   body {
     overflow-x: hidden;
   }
@@ -345,11 +347,6 @@ footer {
 }
 
 @media (max-width: 767.98px) {
-  header {
-    position: sticky;
-    bottom: 0;
-  }
-
   header .header-title::after {
     content: "P";
   }
