@@ -1,0 +1,377 @@
+:root {
+  --bg-color: #f3f3f1;
+  --text-color: #333;
+  --about-bg: #dde2bf;
+  --card-bg: #ffffff;
+  --section-bg: #f3f3f1;
+  --section-color: #333;
+  --skill-bg: #292929;
+  --skill-color: #f3f3f1;
+  --highlight-color: #cddc39;
+  --contact-invert-icon: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #333;
+    --text-color: #f1f1f1;
+    --about-bg: #93886c;
+    --card-bg: #292929;
+    --section-bg: #444;
+    --section-color: #f3f3f1;
+    --highlight-color: #9acd32;
+    --contact-invert-icon: 0;
+  }
+}
+
+.dark-mode {
+  --bg-color: #333;
+  --text-color: #f1f1f1;
+  --about-bg: #93886c;
+  --card-bg: #292929;
+  --section-bg: #444;
+  --section-color: #f3f3f1;
+  --highlight-color: #9acd32;
+  --contact-invert-icon: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 17px;
+}
+
+header {
+  background-color: var(--bg-color);
+  width: 100%;
+  border-bottom: 3px solid var(--highlight-color);
+}
+
+header .header-title {
+  color: var(--text-color);
+  font-family: "", Courier;
+  position: relative;
+}
+
+.header-title::after {
+  content: attr(data-text);
+}
+
+.header-title::before {
+  content: "";
+  background: var(--highlight-color);
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 8px;
+  right: -13px;
+  z-index: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#dark-mode-toggle {
+  background: var(--card-bg);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+  width: 80px;
+}
+
+#dark-mode-toggle:hover {
+  opacity: 0.7;
+}
+
+section {
+  padding: 4rem;
+  background-color: var(--section-bg);
+  transition: 0.35s background-color ease;
+}
+
+section .section-title {
+  font-family: "";
+  border-left: 7px solid var(--highlight-color);
+  padding-left: 1rem;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+section .content {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+/* About */
+#about {
+  background-color: var(--about-bg);
+  color: var(--text-color);
+}
+
+#about .about-container {
+  gap: 20px;
+}
+
+#about .profile-container {
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 3rem;
+  border: 0.5rem solid white;
+  cursor: pointer;
+  position:relative;
+}
+
+#about .profile-container:hover .profile {
+  transform: scale(1.1);
+}
+
+#about .profile-container .fact-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--skill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(0.5);    
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  }
+
+  .fact-overlay span{
+    padding:1rem;
+  }
+
+#about .profile {
+  height: 300px;
+  width: 300px;
+  transition: 0.25s all ease-in-out;
+}
+
+#about .content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* Hobbies */
+#hobbies {
+}
+
+#hobbies .hobbies-container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#hobbies .hobbies-container .hobby {
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background: var(--card-bg);
+}
+
+#hobbies img.card-banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#hobbies div.card-details {
+  padding: 0 1.5rem;
+}
+
+/* Skills and Technologies */
+#skills {
+  background: var(--skill-bg);
+  color: var(--skill-color);
+}
+
+#skills .section-title {
+  color: var(--skill-color);
+}
+
+#skills .skills-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#skills .skills-container > a.skill {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  filter: grayscale(1);
+  transition: 0.15s all ease;
+  border-bottom: 1px solid transparent;
+}
+
+#skills .skills-container > a.skill:hover {
+  filter: grayscale(0);
+  border-bottom-color: var(--highlight-color);
+}
+
+#skills .skills-container > a.skill img {
+  height: 130px;
+  width: 130px;
+  transition: 0.15s all ease;
+}
+
+/* Contact */
+#contact span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.4rem 0;
+}
+
+#contact span img {
+  height: 30px;
+  filter: invert(var(--contact-invert-icon));
+}
+
+#contact span a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--highlight-color);
+}
+
+@media (max-width: 991.98px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 15px;
+  }
+  section .content {
+    padding: 1rem;
+  }
+
+  #about .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  #about .content {
+    text-align: left;
+    padding: 10px;
+  }
+  #hobbies .hobbies-container {
+    display: block;
+  }
+
+  #hobbies .hobbies-container .hobby {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    position: sticky;
+    bottom: 0;
+  }
+
+  header .header-title::after {
+    content: "P";
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  section {
+    padding: 0px;
+  }
+
+  #about .profile-container, #about .profile {
+    height: 100%;
+    width: 100%;
+  }
+
+  #hobbies img.card-banner {
+    height: 160px;
+  }
+
+  #hobbies div.card-details {
+    padding: 0 1rem;
+  }
+
+  #skills .skills-container > a.skill img {
+    height: 100px;
+    width: 100px;
+  }
+}
