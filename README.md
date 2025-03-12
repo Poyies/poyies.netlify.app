@@ -5,7 +5,7 @@
 ---
 
 ## 📖 **Project Overview**
-This project is part of the **CMSC 207 Web Programming and Development** course, inspired by *Create with Code: Build Your Own Website* by Clyde Hatter.  
+This project is part of the CMSC 207 Web Programming and Development course, inspired by *Create with Code: Build Your Own Website* by Clyde Hatter.  
 
 The goal is to create a **personal web profile** that applies **semantic HTML structure, CSS styling, JavaScript interactivity**, and ensures **responsiveness** across devices.
 
@@ -62,13 +62,18 @@ The website consists of the following sections:
 ---
 
 ## 📸 **Screenshots**
-💡 _(Optional: Add screenshots of your project here)_  
 
----
+![Homepage](assets/screenshots/about.jpg)
 
-## 📌 **Project Submission**
-To submit this project, provide the **GitHub repository link** and the **Netlify deployment link** in your PDF report.
+![Dark Mode](assets/screenshots/skills.png)
 
+![Dark Mode](assets/screenshots/darkmode.jpg)
+
+![Dark Mode](assets/screenshots/responsive0.jpg)
+
+![Dark Mode](assets/screenshots/responsive1.jpg)
+
+![Dark Mode](assets/screenshots/responsive2.jpg)
 ---
 
 ## 🤝 **Author**
