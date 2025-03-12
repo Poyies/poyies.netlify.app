@@ -63,17 +63,16 @@ The website consists of the following sections:
 
 ## 📸 **Screenshots**
 
-![Homepage](assets/screenshots/about.jpg)
+![about](assets/screenshots/about.jpg)
 
-![Dark Mode](assets/screenshots/skills.png)
+![hobbies](assets/screenshots/hobbies.jpg)
+
+![skills](assets/screenshots/skills.jpg)
 
 ![Dark Mode](assets/screenshots/darkmode.jpg)
 
-![Dark Mode](assets/screenshots/responsive0.jpg)
+![Responsive design](assets/screenshots/mobile.jpg.jpg)
 
-![Dark Mode](assets/screenshots/responsive1.jpg)
-
-![Dark Mode](assets/screenshots/responsive2.jpg)
 ---
 
 ## 🤝 **Author**
