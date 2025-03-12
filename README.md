@@ -71,7 +71,7 @@ The website consists of the following sections:
 
 ![Dark Mode](assets/screenshots/darkmode.jpg)
 
-![Responsive design](assets/screenshots/mobile.jpg.jpg)
+![Responsive design](assets/screenshots/mobile.jpg)
 
 ---
 
