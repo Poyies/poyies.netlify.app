@@ -1,27 +1,27 @@
 # **CMSC 207 Mini-Project: Personal Web Profile**
-**🚀 Live Demo:** [Poyies Personal Web Profile](https://poyies.netlify.app/)  
-**📌 GitHub Repository:** [Poyies.netlify.app](https://github.com/Poyies/poyies.netlify.app)  
+** Live Demo:** [Poyies Personal Web Profile](https://poyies.netlify.app/)  
+** GitHub Repository:** [Poyies.netlify.app](https://github.com/Poyies/poyies.netlify.app)  
 
 ---
 
-## 📖 **Project Overview**
+## **Project Overview**
 This project is part of the CMSC 207 Web Programming and Development course, inspired by *Create with Code: Build Your Own Website* by Clyde Hatter.  
 
 The goal is to create a **personal web profile** that applies **semantic HTML structure, CSS styling, JavaScript interactivity**, and ensures **responsiveness** across devices.
 
 ---
 
-## 🎯 **Project Objectives**
+## **Project Objectives**
 By completing this project, I have:
-- ✅ Developed a **structured and semantic** HTML page.
-- ✅ Applied **CSS styling** for enhanced layout, colors, and typography.
-- ✅ Used **JavaScript for interactivity** (Dark Mode toggle, fun fact display).
-- ✅ Implemented **responsive design** for mobile and desktop.
-- ✅ Practiced **debugging and optimizing** a web page.
+- Developed a **structured and semantic** HTML page.
+- Applied **CSS styling** for enhanced layout, colors, and typography.
+- Used **JavaScript for interactivity** (Dark Mode toggle, fun fact display).
+- Implemented **responsive design** for mobile and desktop.
+- Practiced **debugging and optimizing** a web page.
 
 ---
 
-## 🖥 **Website Structure**
+## **Website Structure**
 The website consists of the following sections:
 
 1. **Header**
@@ -41,7 +41,7 @@ The website consists of the following sections:
 
 ---
 
-## 🚀 **Technologies Used**
+## **Technologies Used**
 | Technology  | Description |
 |------------|-------------|
 | **HTML5**  | Uses **semantic tags** (`<header>`, `<section>`, `<footer>`, etc.) for structure. |
@@ -52,7 +52,7 @@ The website consists of the following sections:
 
 ---
 
-## ✨ **Features & Enhancements**
+## **Features & Enhancements**
 ✔ **Navigation Menu** – Simple top menu with smooth scrolling.  
 ✔ **Hover Effects** – CSS styling changes on buttons & images.  
 ✔ **JavaScript Interaction** – Clicking the **profile image** shows a **random fun fact**.  
@@ -61,7 +61,7 @@ The website consists of the following sections:
 
 ---
 
-## 📸 **Screenshots**
+## **Screenshots**
 
 ![about](assets/screenshots/about.jpg)
 
@@ -75,17 +75,9 @@ The website consists of the following sections:
 
 ---
 
-## 🤝 **Author**
+## **Author**
 👤 **Jeff Legaspi**  
 ✉️ **Email:** [jplegaspi2@up.edu.ph](mailto:jplegaspi2@up.edu.ph)  
 🌐 **Live Site:** [Poyies Personal Web Profile](https://poyies.netlify.app/)  
 📌 **GitHub:** [Poyies](https://github.com/Poyies)  
 
----
-
-## 📝 **License**
-This project is licensed under the **MIT License**. Feel free to modify and use it as needed.
-
----
-
-🎉 **Thank you for visiting!** If you found this project useful, feel free to ⭐ the repository! 🚀😊  
