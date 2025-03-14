@@ -53,11 +53,11 @@ The website consists of the following sections:
 ---
 
 ## **Features & Enhancements**
-✔ **Navigation Menu** – Simple top menu with smooth scrolling.  
-✔ **Hover Effects** – CSS styling changes on buttons & images.  
-✔ **JavaScript Interaction** – Clicking the **profile image** shows a **random fun fact**.  
-✔ **Dark Mode Toggle** – Users can switch between **light & dark themes**.  
-✔ **Mobile-Friendly Layout** – Uses **CSS media queries** to adapt to different screen sizes.  
+**Navigation Menu** – Simple top menu with smooth scrolling.  
+**Hover Effects** – CSS styling changes on buttons & images.  
+**JavaScript Interaction** – Clicking the **profile image** shows a **random fun fact**.  
+**Dark Mode Toggle** – Users can switch between **light & dark themes**.  
+**Mobile-Friendly Layout** – Uses **CSS media queries** to adapt to different screen sizes.  
 
 ---
 
@@ -76,8 +76,8 @@ The website consists of the following sections:
 ---
 
 ## **Author**
-👤 **Jeff Legaspi**  
-✉️ **Email:** [jplegaspi2@up.edu.ph](mailto:jplegaspi2@up.edu.ph)  
-🌐 **Live Site:** [Poyies Personal Web Profile](https://poyies.netlify.app/)  
-📌 **GitHub:** [Poyies](https://github.com/Poyies)  
+**Jeff Legaspi**  
+**Email:** [jplegaspi2@up.edu.ph](mailto:jplegaspi2@up.edu.ph)  
+**Live Site:** [Poyies Personal Web Profile](https://poyies.netlify.app/)  
+**GitHub:** [Poyies](https://github.com/Poyies)  
 
